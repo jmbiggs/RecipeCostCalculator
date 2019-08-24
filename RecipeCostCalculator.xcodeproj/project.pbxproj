@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C047ABB2311F51F00367595 /* PantryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C047ABA2311F51F00367595 /* PantryItem.m */; };
+		4C047ABE2311F53600367595 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C047ABD2311F53600367595 /* Recipe.m */; };
+		4C047AC22311F5EE00367595 /* RecipeIngredient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C047AC12311F5EE00367595 /* RecipeIngredient.m */; };
+		4C5594392311EF680054CB04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5594382311EF680054CB04 /* AppDelegate.m */; };
+		4C5594422311EF680054CB04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5594402311EF680054CB04 /* Main.storyboard */; };
+		4C5594442311EF6B0054CB04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5594432311EF6B0054CB04 /* Assets.xcassets */; };
+		4C5594472311EF6B0054CB04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5594452311EF6B0054CB04 /* LaunchScreen.storyboard */; };
+		4C55944A2311EF6B0054CB04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5594492311EF6B0054CB04 /* main.m */; };
+		4C5594522311EFBD0054CB04 /* PantryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5594512311EFBD0054CB04 /* PantryViewController.m */; };
+		4C5594552311EFD20054CB04 /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5594542311EFD20054CB04 /* RecipeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4C047AB92311F51F00367595 /* PantryItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PantryItem.h; sourceTree = "<group>"; };
+		4C047ABA2311F51F00367595 /* PantryItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PantryItem.m; sourceTree = "<group>"; };
+		4C047ABC2311F53600367595 /* Recipe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
+		4C047ABD2311F53600367595 /* Recipe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
+		4C047AC02311F5EE00367595 /* RecipeIngredient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecipeIngredient.h; sourceTree = "<group>"; };
+		4C047AC12311F5EE00367595 /* RecipeIngredient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecipeIngredient.m; sourceTree = "<group>"; };
+		4C5594342311EF680054CB04 /* RecipeCostCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeCostCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5594372311EF680054CB04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4C5594382311EF680054CB04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4C5594412311EF680054CB04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C5594432311EF6B0054CB04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C5594462311EF6B0054CB04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C5594482311EF6B0054CB04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C5594492311EF6B0054CB04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C5594502311EFBD0054CB04 /* PantryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PantryViewController.h; sourceTree = "<group>"; };
+		4C5594512311EFBD0054CB04 /* PantryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PantryViewController.m; sourceTree = "<group>"; };
+		4C5594532311EFD20054CB04 /* RecipeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
+		4C5594542311EFD20054CB04 /* RecipeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C5594312311EF680054CB04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C047ABF2311F54000367595 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C047AB92311F51F00367595 /* PantryItem.h */,
+				4C047ABA2311F51F00367595 /* PantryItem.m */,
+				4C047AC02311F5EE00367595 /* RecipeIngredient.h */,
+				4C047AC12311F5EE00367595 /* RecipeIngredient.m */,
+				4C047ABC2311F53600367595 /* Recipe.h */,
+				4C047ABD2311F53600367595 /* Recipe.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C55942B2311EF680054CB04 = {
+			isa = PBXGroup;
+			children = (
+				4C5594362311EF680054CB04 /* RecipeCostCalculator */,
+				4C5594352311EF680054CB04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C5594352311EF680054CB04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C5594342311EF680054CB04 /* RecipeCostCalculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C5594362311EF680054CB04 /* RecipeCostCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				4C5594372311EF680054CB04 /* AppDelegate.h */,
+				4C5594382311EF680054CB04 /* AppDelegate.m */,
+				4C5594562311EFDE0054CB04 /* Pantry */,
+				4C5594572311EFEB0054CB04 /* Recipe */,
+				4C047ABF2311F54000367595 /* Model */,
+				4C5594402311EF680054CB04 /* Main.storyboard */,
+				4C5594432311EF6B0054CB04 /* Assets.xcassets */,
+				4C5594452311EF6B0054CB04 /* LaunchScreen.storyboard */,
+				4C5594482311EF6B0054CB04 /* Info.plist */,
+				4C5594492311EF6B0054CB04 /* main.m */,
+			);
+			path = RecipeCostCalculator;
+			sourceTree = "<group>";
+		};
+		4C5594562311EFDE0054CB04 /* Pantry */ = {
+			isa = PBXGroup;
+			children = (
+				4C5594502311EFBD0054CB04 /* PantryViewController.h */,
+				4C5594512311EFBD0054CB04 /* PantryViewController.m */,
+			);
+			path = Pantry;
+			sourceTree = "<group>";
+		};
+		4C5594572311EFEB0054CB04 /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				4C5594532311EFD20054CB04 /* RecipeViewController.h */,
+				4C5594542311EFD20054CB04 /* RecipeViewController.m */,
+			);
+			path = Recipe;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C5594332311EF680054CB04 /* RecipeCostCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C55944D2311EF6B0054CB04 /* Build configuration list for PBXNativeTarget "RecipeCostCalculator" */;
+			buildPhases = (
+				4C5594302311EF680054CB04 /* Sources */,
+				4C5594312311EF680054CB04 /* Frameworks */,
+				4C5594322311EF680054CB04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecipeCostCalculator;
+			productName = RecipeCostCalculator;
+			productReference = 4C5594342311EF680054CB04 /* RecipeCostCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C55942C2311EF680054CB04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Michael Biggs";
+				TargetAttributes = {
+					4C5594332311EF680054CB04 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 4C55942F2311EF680054CB04 /* Build configuration list for PBXProject "RecipeCostCalculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C55942B2311EF680054CB04;
+			productRefGroup = 4C5594352311EF680054CB04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C5594332311EF680054CB04 /* RecipeCostCalculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C5594322311EF680054CB04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5594472311EF6B0054CB04 /* LaunchScreen.storyboard in Resources */,
+				4C5594442311EF6B0054CB04 /* Assets.xcassets in Resources */,
+				4C5594422311EF680054CB04 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C5594302311EF680054CB04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5594552311EFD20054CB04 /* RecipeViewController.m in Sources */,
+				4C047ABE2311F53600367595 /* Recipe.m in Sources */,
+				4C5594522311EFBD0054CB04 /* PantryViewController.m in Sources */,
+				4C5594392311EF680054CB04 /* AppDelegate.m in Sources */,
+				4C55944A2311EF6B0054CB04 /* main.m in Sources */,
+				4C047AC22311F5EE00367595 /* RecipeIngredient.m in Sources */,
+				4C047ABB2311F51F00367595 /* PantryItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C5594402311EF680054CB04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C5594412311EF680054CB04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C5594452311EF6B0054CB04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C5594462311EF6B0054CB04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C55944B2311EF6B0054CB04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4C55944C2311EF6B0054CB04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C55944E2311EF6B0054CB04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RecipeCostCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.MichaelBiggs.RecipeCostCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C55944F2311EF6B0054CB04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RecipeCostCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.MichaelBiggs.RecipeCostCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C55942F2311EF680054CB04 /* Build configuration list for PBXProject "RecipeCostCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C55944B2311EF6B0054CB04 /* Debug */,
+				4C55944C2311EF6B0054CB04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C55944D2311EF6B0054CB04 /* Build configuration list for PBXNativeTarget "RecipeCostCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C55944E2311EF6B0054CB04 /* Debug */,
+				4C55944F2311EF6B0054CB04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C55942C2311EF680054CB04 /* Project object */;
+}
