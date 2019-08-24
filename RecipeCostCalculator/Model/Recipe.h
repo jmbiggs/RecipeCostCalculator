@@ -8,13 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
-#import "PantryItem.h"
+#import "RecipeIngredient.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Recipe : NSObject
 
-@property (nonatomic, nonnull) NSArray<PantryItem*>* ingredients;
+@property (nonatomic, nonnull, readonly) NSArray<RecipeIngredient*>* ingredients;
+
+- (void)addIngredient:(RecipeIngredient*)ingredient;
+- (void)removeIngredient:(RecipeIngredient*)ingredient;
+
+- (NSNumber*)calculatedCost;
 
 @end
 

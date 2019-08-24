@@ -26,6 +26,10 @@ NSString * stringForAmountUnit(PantryItemUnit unit);
 @property (nonatomic, nonnull) NSNumber * cost;
 @property (nonatomic) PantryItemUnit costUnit;
 
+- (instancetype)initWithName:(NSString*)name cost:(NSNumber*)cost unit:(PantryItemUnit)unit;
+
+- (instancetype)init __attribute__((unavailable("use - initWithName:cost:unit instead")));
+
 @end
 
 NS_ASSUME_NONNULL_END

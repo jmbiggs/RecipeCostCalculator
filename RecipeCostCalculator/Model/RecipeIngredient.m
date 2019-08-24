@@ -10,4 +10,15 @@
 
 @implementation RecipeIngredient
 
+- (instancetype)initWithPantryItem:(PantryItem *)pantryItem amount:(NSNumber *)amount unit:(PantryItemUnit)unit
+{
+    self = [super init];
+    if (self) {
+        _pantryItem = pantryItem;
+        _amount = amount;
+        _amountUnit = unit;
+    }
+    return self;
+}
+
 @end

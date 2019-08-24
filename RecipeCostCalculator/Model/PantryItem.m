@@ -34,4 +34,15 @@ NSString * stringForAmountUnit(PantryItemUnit unit) {
 
 @implementation PantryItem
 
+- (instancetype)initWithName:(NSString *)name cost:(NSNumber *)cost unit:(PantryItemUnit)unit
+{
+    self = [super init];
+    if (self) {
+        _name = name;
+        _cost = cost;
+        _costUnit = unit;
+    }
+    return self;
+}
+
 @end
