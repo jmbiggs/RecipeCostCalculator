@@ -21,6 +21,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PKV-Q5-UNv">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="3Nl-Jr-A7Q"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="1Bt-kT-sdw"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -33,10 +37,79 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <navigationItem key="navigationItem" title="Pantry" id="fvl-Wk-dqe"/>
+                    <connections>
+                        <outlet property="navigationItem" destination="fvl-Wk-dqe" id="6de-9U-mMA"/>
+                        <outlet property="tableView" destination="PKV-Q5-UNv" id="KRT-L3-quy"/>
+                        <segue destination="Qz8-z8-VZ5" kind="presentation" identifier="PantryItemDetail" id="9gn-T5-f3H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2057" y="-275"/>
+        </scene>
+        <!--Pantry Item Detail View Controller-->
+        <scene sceneID="Tnn-Ip-cea">
+            <objects>
+                <viewController id="pPz-yM-sDj" customClass="PantryItemDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="blC-Ra-ndg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NlH-bh-DSQ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="pPz-yM-sDj" id="mGz-1W-PCq"/>
+                                    <outlet property="delegate" destination="pPz-yM-sDj" id="QJT-Zf-hmR"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UlR-1s-OHW" firstAttribute="bottom" secondItem="NlH-bh-DSQ" secondAttribute="bottom" id="bDl-DH-sjs"/>
+                            <constraint firstItem="UlR-1s-OHW" firstAttribute="trailing" secondItem="NlH-bh-DSQ" secondAttribute="trailing" id="oJP-E7-AB5"/>
+                            <constraint firstItem="NlH-bh-DSQ" firstAttribute="leading" secondItem="UlR-1s-OHW" secondAttribute="leading" id="pfs-0L-Bnj"/>
+                            <constraint firstItem="NlH-bh-DSQ" firstAttribute="top" secondItem="UlR-1s-OHW" secondAttribute="top" id="xns-QW-y3e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UlR-1s-OHW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lkD-mK-HVZ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="NBO-Cj-qoU">
+                            <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="cancelPressed:" destination="pPz-yM-sDj" id="32M-t9-7dl"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Oob-AK-D7M">
+                            <connections>
+                                <action selector="savePressed:" destination="pPz-yM-sDj" id="50T-12-Fec"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="navigationItem" destination="lkD-mK-HVZ" id="Awj-kd-9wu"/>
+                        <outlet property="tableView" destination="NlH-bh-DSQ" id="ZP4-Hv-nUO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6AN-qG-bMw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4257" y="-275"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ajD-Fq-mlj">
+            <objects>
+                <navigationController id="Qz8-z8-VZ5" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Z7-bY-7pt">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pPz-yM-sDj" kind="relationship" relationship="rootViewController" id="2Oe-gu-BpQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FAw-ZO-psb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3130" y="-275"/>
         </scene>
         <!--Pantry-->
         <scene sceneID="adk-w5-v3n">
@@ -56,35 +129,6 @@
             <point key="canvasLocation" x="1129" y="-274"/>
         </scene>
         <!--Recipes-->
-        <scene sceneID="Dqh-In-0rp">
-            <objects>
-                <tableViewController id="K44-Lb-8C8" customClass="RecipesViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vfF-BE-EOL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="gLv-qY-dHf">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gLv-qY-dHf" id="SAh-Sm-a5w">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="K44-Lb-8C8" id="cln-ht-pSK"/>
-                            <outlet property="delegate" destination="K44-Lb-8C8" id="P0q-vS-PLE"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Recipes" id="F2S-O6-R49"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Mw-Em-1AS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2057" y="615"/>
-        </scene>
-        <!--Recipes-->
         <scene sceneID="Tbo-sD-xW1">
             <objects>
                 <navigationController id="cKI-2e-JSN" sceneMemberID="viewController">
@@ -94,12 +138,47 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="K44-Lb-8C8" kind="relationship" relationship="rootViewController" id="ZPs-Ta-eh1"/>
+                        <segue destination="40q-s3-9TN" kind="relationship" relationship="rootViewController" id="7GA-dl-4Vp"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lBZ-lv-cMp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1135" y="615"/>
+        </scene>
+        <!--Recipes-->
+        <scene sceneID="O2f-8h-Qky">
+            <objects>
+                <viewController id="40q-s3-9TN" customClass="RecipeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AAu-Xr-goI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XlY-AK-19H">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="40q-s3-9TN" id="YbL-Yn-OtE"/>
+                                    <outlet property="delegate" destination="40q-s3-9TN" id="nNS-CY-YVm"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XlY-AK-19H" firstAttribute="top" secondItem="gL0-qc-m1m" secondAttribute="top" id="QVx-dQ-Mxy"/>
+                            <constraint firstItem="gL0-qc-m1m" firstAttribute="trailing" secondItem="XlY-AK-19H" secondAttribute="trailing" id="cFb-Wc-Wku"/>
+                            <constraint firstItem="gL0-qc-m1m" firstAttribute="bottom" secondItem="XlY-AK-19H" secondAttribute="bottom" id="jOy-hv-dFP"/>
+                            <constraint firstItem="XlY-AK-19H" firstAttribute="leading" secondItem="gL0-qc-m1m" secondAttribute="leading" id="sqr-Mv-77E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gL0-qc-m1m"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Recipes" id="Gdi-xM-Jp5"/>
+                    <connections>
+                        <outlet property="tableView" destination="XlY-AK-19H" id="mle-eU-Weh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dtp-Ra-A3l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2057" y="615"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

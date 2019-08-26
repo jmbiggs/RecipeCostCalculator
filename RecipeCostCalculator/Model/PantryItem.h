@@ -19,6 +19,7 @@ typedef NS_ENUM(NSInteger, PantryItemUnit) {
 };
 
 NSString * stringForAmountUnit(PantryItemUnit unit);
+PantryItemUnit amountUnitForString(NSString* string);
 
 @interface PantryItem : NSObject
 

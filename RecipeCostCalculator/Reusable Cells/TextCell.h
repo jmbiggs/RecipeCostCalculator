@@ -1,5 +1,5 @@
 //
-//  PantryViewController.h
+//  TextCell.h
 //  RecipeCostCalculator
 //
 //  Created by Michael Biggs on 8/24/19.
@@ -10,7 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PantryViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface TextCell : UITableViewCell
+
+@property (nonatomic, nonnull) IBOutlet UILabel * primaryLabel;
+@property (nonatomic, nonnull) IBOutlet UILabel * secondaryLabel;
 
 @end
 

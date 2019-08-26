@@ -10,6 +10,14 @@
 		4C047ABB2311F51F00367595 /* PantryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C047ABA2311F51F00367595 /* PantryItem.m */; };
 		4C047ABE2311F53600367595 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C047ABD2311F53600367595 /* Recipe.m */; };
 		4C047AC22311F5EE00367595 /* RecipeIngredient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C047AC12311F5EE00367595 /* RecipeIngredient.m */; };
+		4C047AC62312005900367595 /* TextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C047AC42312005900367595 /* TextCell.m */; };
+		4C047AC72312005900367595 /* TextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C047AC52312005900367595 /* TextCell.xib */; };
+		4C047ACB2312073000367595 /* PantryItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C047ACA2312073000367595 /* PantryItemDetailViewController.m */; };
+		4C047ACF2314571F00367595 /* TextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C047ACD2314571F00367595 /* TextFieldCell.m */; };
+		4C047AD02314571F00367595 /* TextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C047ACE2314571F00367595 /* TextFieldCell.xib */; };
+		4C047AD42314573000367595 /* PickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C047AD22314573000367595 /* PickerCell.m */; };
+		4C047AD52314573000367595 /* PickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C047AD32314573000367595 /* PickerCell.xib */; };
+		4C047AD82314614D00367595 /* NSNumberFormatter+RCC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C047AD72314614D00367595 /* NSNumberFormatter+RCC.m */; };
 		4C5594392311EF680054CB04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5594382311EF680054CB04 /* AppDelegate.m */; };
 		4C5594422311EF680054CB04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5594402311EF680054CB04 /* Main.storyboard */; };
 		4C5594442311EF6B0054CB04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5594432311EF6B0054CB04 /* Assets.xcassets */; };
@@ -26,6 +34,19 @@
 		4C047ABD2311F53600367595 /* Recipe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
 		4C047AC02311F5EE00367595 /* RecipeIngredient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecipeIngredient.h; sourceTree = "<group>"; };
 		4C047AC12311F5EE00367595 /* RecipeIngredient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecipeIngredient.m; sourceTree = "<group>"; };
+		4C047AC32312005900367595 /* TextCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextCell.h; sourceTree = "<group>"; };
+		4C047AC42312005900367595 /* TextCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextCell.m; sourceTree = "<group>"; };
+		4C047AC52312005900367595 /* TextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextCell.xib; sourceTree = "<group>"; };
+		4C047AC92312073000367595 /* PantryItemDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PantryItemDetailViewController.h; sourceTree = "<group>"; };
+		4C047ACA2312073000367595 /* PantryItemDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PantryItemDetailViewController.m; sourceTree = "<group>"; };
+		4C047ACC2314571F00367595 /* TextFieldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldCell.h; sourceTree = "<group>"; };
+		4C047ACD2314571F00367595 /* TextFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldCell.m; sourceTree = "<group>"; };
+		4C047ACE2314571F00367595 /* TextFieldCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldCell.xib; sourceTree = "<group>"; };
+		4C047AD12314573000367595 /* PickerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickerCell.h; sourceTree = "<group>"; };
+		4C047AD22314573000367595 /* PickerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickerCell.m; sourceTree = "<group>"; };
+		4C047AD32314573000367595 /* PickerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerCell.xib; sourceTree = "<group>"; };
+		4C047AD62314614D00367595 /* NSNumberFormatter+RCC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSNumberFormatter+RCC.h"; path = "../NSNumberFormatter+RCC.h"; sourceTree = "<group>"; };
+		4C047AD72314614D00367595 /* NSNumberFormatter+RCC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSNumberFormatter+RCC.m"; path = "../NSNumberFormatter+RCC.m"; sourceTree = "<group>"; };
 		4C5594342311EF680054CB04 /* RecipeCostCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeCostCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C5594372311EF680054CB04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4C5594382311EF680054CB04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -64,6 +85,31 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		4C047AC82312006000367595 /* Reusable Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4C047AC32312005900367595 /* TextCell.h */,
+				4C047AC42312005900367595 /* TextCell.m */,
+				4C047AC52312005900367595 /* TextCell.xib */,
+				4C047ACC2314571F00367595 /* TextFieldCell.h */,
+				4C047ACD2314571F00367595 /* TextFieldCell.m */,
+				4C047ACE2314571F00367595 /* TextFieldCell.xib */,
+				4C047AD12314573000367595 /* PickerCell.h */,
+				4C047AD22314573000367595 /* PickerCell.m */,
+				4C047AD32314573000367595 /* PickerCell.xib */,
+			);
+			path = "Reusable Cells";
+			sourceTree = "<group>";
+		};
+		4C047AD92314615300367595 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4C047AD62314614D00367595 /* NSNumberFormatter+RCC.h */,
+				4C047AD72314614D00367595 /* NSNumberFormatter+RCC.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		4C55942B2311EF680054CB04 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +131,8 @@
 			children = (
 				4C5594372311EF680054CB04 /* AppDelegate.h */,
 				4C5594382311EF680054CB04 /* AppDelegate.m */,
+				4C047AD92314615300367595 /* Utilities */,
+				4C047AC82312006000367595 /* Reusable Cells */,
 				4C5594562311EFDE0054CB04 /* Pantry */,
 				4C5594572311EFEB0054CB04 /* Recipe */,
 				4C047ABF2311F54000367595 /* Model */,
@@ -102,6 +150,8 @@
 			children = (
 				4C5594502311EFBD0054CB04 /* PantryViewController.h */,
 				4C5594512311EFBD0054CB04 /* PantryViewController.m */,
+				4C047AC92312073000367595 /* PantryItemDetailViewController.h */,
+				4C047ACA2312073000367595 /* PantryItemDetailViewController.m */,
 			);
 			path = Pantry;
 			sourceTree = "<group>";
@@ -172,7 +222,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C047AC72312005900367595 /* TextCell.xib in Resources */,
 				4C5594472311EF6B0054CB04 /* LaunchScreen.storyboard in Resources */,
+				4C047AD02314571F00367595 /* TextFieldCell.xib in Resources */,
+				4C047AD52314573000367595 /* PickerCell.xib in Resources */,
 				4C5594442311EF6B0054CB04 /* Assets.xcassets in Resources */,
 				4C5594422311EF680054CB04 /* Main.storyboard in Resources */,
 			);
@@ -189,9 +242,14 @@
 				4C047ABE2311F53600367595 /* Recipe.m in Sources */,
 				4C5594522311EFBD0054CB04 /* PantryViewController.m in Sources */,
 				4C5594392311EF680054CB04 /* AppDelegate.m in Sources */,
+				4C047ACB2312073000367595 /* PantryItemDetailViewController.m in Sources */,
+				4C047ACF2314571F00367595 /* TextFieldCell.m in Sources */,
+				4C047AC62312005900367595 /* TextCell.m in Sources */,
 				4C55944A2311EF6B0054CB04 /* main.m in Sources */,
 				4C047AC22311F5EE00367595 /* RecipeIngredient.m in Sources */,
 				4C047ABB2311F51F00367595 /* PantryItem.m in Sources */,
+				4C047AD42314573000367595 /* PickerCell.m in Sources */,
+				4C047AD82314614D00367595 /* NSNumberFormatter+RCC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +392,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HXH9MZBPRJ;
 				INFOPLIST_FILE = RecipeCostCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -350,6 +409,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HXH9MZBPRJ;
 				INFOPLIST_FILE = RecipeCostCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

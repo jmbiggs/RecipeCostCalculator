@@ -8,18 +8,22 @@
 
 #import "PantryItem.h"
 
+static NSString * const kOunceString = @"Ounce";
+static NSString * const kPoundString = @"Pound";
+static NSString * const kPieceString = @"Piece";
+
 NSString * stringForAmountUnit(PantryItemUnit unit) {
     switch (unit) {
         case PantryItemUnitOunces: {
-            return @"Ounces";
+            return kOunceString;
         }
             
         case PantryItemUnitPounds: {
-            return @"Pounds";
+            return kPoundString;
         }
             
         case PantryItemUnitPiece: {
-            return @"Pieces";
+            return kPieceString;
         }
             
         case PantryItemUnitUnknown: {
@@ -29,6 +33,19 @@ NSString * stringForAmountUnit(PantryItemUnit unit) {
         default: {
             return @"";
         }
+    }
+}
+
+PantryItemUnit amountUnitForString(NSString* string)
+{
+    if ([string isEqualToString:kOunceString]) {
+        return PantryItemUnitOunces;
+    } else if ([string isEqualToString:kPieceString]) {
+        return PantryItemUnitPiece;
+    } else if ([string isEqualToString:kPoundString]) {
+        return PantryItemUnitPounds;
+    } else {
+        return PantryItemUnitUnknown;
     }
 }
 
