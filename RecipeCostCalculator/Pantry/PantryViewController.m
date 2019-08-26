@@ -8,6 +8,7 @@
 
 #import "PantryViewController.h"
 
+#import "Model.h"
 #import "TextCell.h"
 #import "PantryItem.h"
 #import "PantryItemDetailViewController.h"
@@ -36,22 +37,8 @@
     
     [_tableView registerNib:[UINib nibWithNibName:@"TextCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"pantryCell"];
     
-    [self loadPantryItems];
+    _pantryItems = [[Model sharedModel] pantryItems];
     [_tableView reloadData];
-}
-
-- (void)loadPantryItems
-{
-    [self populateBogusData];
-}
-
-- (void)populateBogusData
-{
-    PantryItem * peppers = [[PantryItem alloc] initWithName:@"Red Peppers" cost:@(1.50) unit:PantryItemUnitPounds];
-    PantryItem * bananas = [[PantryItem alloc] initWithName:@"Bananas" cost:@(0.10) unit:PantryItemUnitPiece];
-    PantryItem * garlicPowder = [[PantryItem alloc] initWithName:@"Garlic Powder" cost:@(0.75) unit:PantryItemUnitOunces];
-    
-    _pantryItems = @[peppers, bananas, garlicPowder];
 }
 
 #pragma mark - selector

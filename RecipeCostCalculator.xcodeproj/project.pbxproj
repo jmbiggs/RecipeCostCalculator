@@ -25,6 +25,7 @@
 		4C55944A2311EF6B0054CB04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5594492311EF6B0054CB04 /* main.m */; };
 		4C5594522311EFBD0054CB04 /* PantryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5594512311EFBD0054CB04 /* PantryViewController.m */; };
 		4C5594552311EFD20054CB04 /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5594542311EFD20054CB04 /* RecipeViewController.m */; };
+		4CE1DD4423147DED006CB1B4 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1DD4323147DED006CB1B4 /* Model.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,8 @@
 		4C5594512311EFBD0054CB04 /* PantryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PantryViewController.m; sourceTree = "<group>"; };
 		4C5594532311EFD20054CB04 /* RecipeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
 		4C5594542311EFD20054CB04 /* RecipeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
+		4CE1DD4223147DED006CB1B4 /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		4CE1DD4323147DED006CB1B4 /* Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 		4C047ABF2311F54000367595 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4CE1DD4223147DED006CB1B4 /* Model.h */,
+				4CE1DD4323147DED006CB1B4 /* Model.m */,
 				4C047AB92311F51F00367595 /* PantryItem.h */,
 				4C047ABA2311F51F00367595 /* PantryItem.m */,
 				4C047AC02311F5EE00367595 /* RecipeIngredient.h */,
@@ -249,6 +254,7 @@
 				4C047AC22311F5EE00367595 /* RecipeIngredient.m in Sources */,
 				4C047ABB2311F51F00367595 /* PantryItem.m in Sources */,
 				4C047AD42314573000367595 /* PickerCell.m in Sources */,
+				4CE1DD4423147DED006CB1B4 /* Model.m in Sources */,
 				4C047AD82314614D00367595 /* NSNumberFormatter+RCC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
