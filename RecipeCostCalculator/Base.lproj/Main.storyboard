@@ -171,7 +171,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gL0-qc-m1m"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Recipes" id="Gdi-xM-Jp5"/>
+                    <navigationItem key="navigationItem" title="Recipes" id="Gdi-xM-Jp5">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="igO-XZ-G8X"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="XlY-AK-19H" id="mle-eU-Weh"/>
                     </connections>

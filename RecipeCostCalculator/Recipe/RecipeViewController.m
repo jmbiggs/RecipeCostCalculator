@@ -8,6 +8,12 @@
 
 #import "RecipeViewController.h"
 
+#import "Model.h"
+#import "Recipe.h"
+#import "TextCell.h"
+
+#import "NSNumberFormatter+RCC.h"
+
 @interface RecipeViewController ()
 
 @property (nonatomic, nonnull) IBOutlet UITableView * tableView;
@@ -15,10 +21,16 @@
 @end
 
 @implementation RecipeViewController
+{
+    NSArray<Recipe*>* _recipes;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [_tableView registerNib:[UINib nibWithNibName:@"TextCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"textCell"];
+    
+    _recipes = [[Model sharedModel] recipes];
 }
 
 #pragma mark - UITableViewDelegate
@@ -32,12 +44,19 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return [_recipes count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return nil;
+    TextCell * cell = [tableView dequeueReusableCellWithIdentifier:@"textCell"];
+    
+    Recipe * recipe = [_recipes objectAtIndex:[indexPath row]];
+    
+    [[cell primaryLabel] setText:[recipe name]];
+    [[cell secondaryLabel] setText:[[NSNumberFormatter sharedCurrencyFormatter] stringFromNumber:[recipe calculatedCost]]];
+    
+    return cell;
 }
 
 @end

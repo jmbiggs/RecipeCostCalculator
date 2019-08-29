@@ -12,15 +12,30 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSInteger, RecipeIngredientUnit) {
+    RecipeIngredientUnitTablespoon,
+    RecipeIngredientUnitTeaspoon,
+    RecipeIngredientUnitCup,
+    RecipeIngredientUnitPiece,
+    RecipeIngredientUnitCount,
+    RecipeIngredientUnitUnknown,
+};
+
+NSString * stringForIngredientUnit(RecipeIngredientUnit unit);
+RecipeIngredientUnit ingredientUnitForString(NSString* string);
+NSUnit * unitForIngredientUnit(RecipeIngredientUnit unit);
+
 @interface RecipeIngredient : NSObject
 
 @property (nonatomic, nonnull) PantryItem * pantryItem;
 @property (nonatomic, nonnull) NSNumber * amount;
-@property (nonatomic) PantryItemUnit amountUnit;
+@property (nonatomic) RecipeIngredientUnit amountUnit;
 
-- (instancetype)initWithPantryItem:(PantryItem*)pantryItem amount:(NSNumber*)amount unit:(PantryItemUnit)unit;
+- (instancetype)initWithPantryItem:(PantryItem*)pantryItem amount:(NSNumber*)amount unit:(RecipeIngredientUnit)unit;
 
 - (instancetype)init __attribute__((unavailable("use - initWithPantryItem:amount:unit instead")));
+
+- (NSNumber*)cost;
 
 @end
 

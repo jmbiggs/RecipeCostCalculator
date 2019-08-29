@@ -13,11 +13,12 @@
     NSMutableArray<RecipeIngredient*>* _mutableIngredients;
 }
 
-- (instancetype)init
+- (instancetype)initWithName:(NSString *)name ingredients:(NSArray<RecipeIngredient *> *)ingredients
 {
     self = [super init];
     if (self) {
-        _mutableIngredients = [NSMutableArray array];
+        _name = name;
+        _mutableIngredients = [ingredients mutableCopy];
     }
     return self;
 }
@@ -39,7 +40,13 @@
 
 - (NSNumber *)calculatedCost
 {
-    return nil;
+    double result = 0;
+    
+    for (RecipeIngredient * ingredient in _mutableIngredients) {
+        result += [[ingredient cost] doubleValue];
+    }
+    
+    return @(result);
 }
 
 @end

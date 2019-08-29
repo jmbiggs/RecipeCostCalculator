@@ -14,7 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Recipe : NSObject
 
+@property (nonatomic, nonnull) NSString * name;
 @property (nonatomic, nonnull, readonly) NSArray<RecipeIngredient*>* ingredients;
+
+- (instancetype)initWithName:(NSString*)name ingredients:(NSArray<RecipeIngredient*>*)ingredients;
+
+- (instancetype)init __attribute__((unavailable("use - initWithName:ingredients instead")));
 
 - (void)addIngredient:(RecipeIngredient*)ingredient;
 - (void)removeIngredient:(RecipeIngredient*)ingredient;

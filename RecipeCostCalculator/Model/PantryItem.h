@@ -14,12 +14,15 @@ typedef NS_ENUM(NSInteger, PantryItemUnit) {
     PantryItemUnitOunces,
     PantryItemUnitPounds,
     PantryItemUnitPiece,
+    PantryItemUnitLiters,
+    PantryItemUnitGallons,
     PantryItemUnitCount,
     PantryItemUnitUnknown,
 };
 
 NSString * stringForAmountUnit(PantryItemUnit unit);
 PantryItemUnit amountUnitForString(NSString* string);
+NSUnit * unitForAmountUnit(PantryItemUnit unit);
 
 @interface PantryItem : NSObject
 

@@ -78,6 +78,12 @@
     PantryItem * garlicPowder = [[PantryItem alloc] initWithName:@"Garlic Powder" cost:@(0.75) unit:PantryItemUnitOunces];
     
     [_mutablePantryItems addObjectsFromArray:@[peppers, bananas, garlicPowder]];
+    
+    RecipeIngredient * ingredient1 = [[RecipeIngredient alloc] initWithPantryItem:peppers amount:@(4) unit:RecipeIngredientUnitTeaspoon];
+    RecipeIngredient * ingredient2 = [[RecipeIngredient alloc] initWithPantryItem:garlicPowder amount:@(8) unit:RecipeIngredientUnitCup];
+    RecipeIngredient * ingredient3 = [[RecipeIngredient alloc] initWithPantryItem:bananas amount:@(2) unit:RecipeIngredientUnitPiece];
+    Recipe * recipe = [[Recipe alloc] initWithName:@"Yuck" ingredients:@[ingredient1, ingredient2, ingredient3]];
+    [self addRecipe:recipe];
 }
 
 @end
